@@ -1,7 +1,7 @@
 {
   "name": "@kne/react-dock",
   "version": "0.1.0",
-  "description": "",
+  "description": "macOS 风格浮动 Dock 组件，支持鼠标悬停放大动画、响应式布局和毛玻璃效果",
   "syntax": {
     "esmodules": true
   },
@@ -46,7 +46,18 @@
     "type": "git",
     "url": "git+https://github.com/kne-union/react-dock.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "dock",
+    "floating-dock",
+    "macos-dock",
+    "framer-motion",
+    "animation",
+    "responsive",
+    "glassmorphism",
+    "toolbar",
+    "navigation"
+  ],
   "author": "linzp",
   "license": "ISC",
   "bugs": {
