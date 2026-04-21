@@ -1,0 +1,147 @@
+$dock-bg: rgba(255, 255, 255, 0.85);
+$dock-bg-dark: rgba(23, 23, 23, 0.85);
+$dock-icon-bg: rgba(229, 231, 235, 1);
+$dock-icon-bg-dark: rgba(38, 38, 38, 1);
+$dock-tooltip-bg: rgba(243, 244, 246, 1);
+$dock-tooltip-bg-dark: rgba(38, 38, 38, 1);
+$dock-tooltip-border: rgba(229, 231, 235, 1);
+$dock-tooltip-border-dark: rgba(23, 23, 23, 1);
+$dock-text: rgba(64, 64, 64, 1);
+$dock-text-dark: rgba(255, 255, 255, 1);
+$dock-icon-text: rgba(115, 115, 115, 1);
+$dock-icon-text-dark: rgba(212, 212, 212, 1);
+$dock-trigger-bg: rgba(243, 244, 246, 1);
+$dock-trigger-bg-dark: rgba(38, 38, 38, 1);
+$dock-trigger-icon: rgba(115, 115, 115, 1);
+$dock-trigger-icon-dark: rgba(163, 163, 163, 1);
+$dock-mobile-item-bg: rgba(243, 244, 246, 1);
+$dock-mobile-item-bg-dark: rgba(23, 23, 23, 1);
+
+:global {
+  :root {
+    --dock-bg: #{$dock-bg};
+    --dock-icon-bg: #{$dock-icon-bg};
+    --dock-tooltip-bg: #{$dock-tooltip-bg};
+    --dock-tooltip-border: #{$dock-tooltip-border};
+    --dock-text: #{$dock-text};
+    --dock-icon-text: #{$dock-icon-text};
+    --dock-trigger-bg: #{$dock-trigger-bg};
+    --dock-trigger-icon: #{$dock-trigger-icon};
+    --dock-mobile-item-bg: #{$dock-mobile-item-bg};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --dock-bg: #{$dock-bg-dark};
+      --dock-icon-bg: #{$dock-icon-bg-dark};
+      --dock-tooltip-bg: #{$dock-tooltip-bg-dark};
+      --dock-tooltip-border: #{$dock-tooltip-border-dark};
+      --dock-text: #{$dock-text-dark};
+      --dock-icon-text: #{$dock-icon-text-dark};
+      --dock-trigger-bg: #{$dock-trigger-bg-dark};
+      --dock-trigger-icon: #{$dock-trigger-icon-dark};
+      --dock-mobile-item-bg: #{$dock-mobile-item-bg-dark};
+    }
+  }
+}
+
+.dockDesktop {
+  display: none;
+  margin: 0 auto;
+  height: 64px;
+  align-items: flex-end;
+  gap: 16px;
+  border-radius: 16px;
+  background: var(--dock-bg);
+  padding: 0 16px 12px;
+  backdrop-filter: blur(12px);
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.dockMobile {
+  position: relative;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.dockMobileItems {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dockMobileItem {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: var(--dock-mobile-item-bg);
+  text-decoration: none;
+  color: inherit;
+}
+
+.dockMobileItemIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.dockMobileTrigger {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: var(--dock-trigger-bg);
+  border: none;
+  cursor: pointer;
+  color: var(--dock-trigger-icon);
+}
+
+.iconContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: var(--dock-icon-bg);
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+}
+
+.iconInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dock-icon-text);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  border-radius: 6px;
+  border: 1px solid var(--dock-tooltip-border);
+  background: var(--dock-tooltip-bg);
+  padding: 2px 8px;
+  font-size: 12px;
+  white-space: pre;
+  color: var(--dock-text);
+  pointer-events: none;
+}
