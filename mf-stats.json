@@ -1,0 +1,326 @@
+{
+  "id": "react_dock_0_1_0",
+  "name": "react_dock_0_1_0",
+  "metaData": {
+    "name": "react_dock_0_1_0",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.1.0",
+      "buildName": "@kne-components/react-dock"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "react_dock_0_1_0",
+    "pluginVersion": "2.3.3",
+    "prefetchInterface": false,
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^0.1.0",
+      "shareScope": "default",
+      "name": "@kne/current-lib_react-dock",
+      "version": "0.1.0",
+      "eager": false,
+      "id": "react_dock_0_1_0:@kne/current-lib_react-dock",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/830.604d15be.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^1.3.2",
+      "shareScope": "default",
+      "name": "@kne/global-context",
+      "version": "1.3.2",
+      "eager": false,
+      "id": "react_dock_0_1_0:@kne/global-context",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/247.e84a898d.chunk.js",
+            "static/js/628.b9a7cc1d.chunk.js",
+            "static/js/257.cc3f464c.chunk.js",
+            "static/js/638.daf7511c.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^1.5.5",
+      "shareScope": "default",
+      "name": "@kne/react-fetch",
+      "version": "1.5.5",
+      "eager": false,
+      "id": "react_dock_0_1_0:@kne/react-fetch",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/201.4d812642.chunk.js",
+            "static/js/355.5162c088.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^0.1.12",
+      "shareScope": "default",
+      "name": "@kne/react-intl",
+      "version": "0.1.12",
+      "eager": false,
+      "id": "react_dock_0_1_0:@kne/react-intl",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/308.65a3d76e.chunk.js",
+            "static/js/548.db4d14ee.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^1.4.6",
+      "shareScope": "default",
+      "name": "@kne/remote-loader",
+      "version": "1.4.6",
+      "eager": false,
+      "id": "react_dock_0_1_0:@kne/remote-loader",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/467.28d8e410.chunk.js",
+            "static/js/848.1d4e92ab.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^6.3.6",
+      "shareScope": "default",
+      "name": "antd",
+      "version": "6.3.6",
+      "eager": false,
+      "id": "react_dock_0_1_0:antd",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/81.ab40f93d.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^1.15.1",
+      "shareScope": "default",
+      "name": "axios",
+      "version": "1.15.1",
+      "eager": false,
+      "id": "react_dock_0_1_0:axios",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/344.182fab65.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^1.11.20",
+      "shareScope": "default",
+      "name": "dayjs",
+      "version": "1.11.20",
+      "eager": false,
+      "id": "react_dock_0_1_0:dayjs",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/446.35fd27fa.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "react_dock_0_1_0:react-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/950.2e1aff4a.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^6.30.3",
+      "shareScope": "default",
+      "name": "react-router-dom",
+      "version": "6.30.3",
+      "eager": false,
+      "id": "react_dock_0_1_0:react-router-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/245.02adff99.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "react_dock_0_1_0:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/43.1a23b93c.chunk.js",
+            "static/js/233.f308a3b5.chunk.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [],
+      "usedExports": [],
+      "fallback": ""
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": "./components",
+      "id": "react_dock_0_1_0:components",
+      "name": "components",
+      "requires": [],
+      "file": "node_modules/readme/modules.js",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/__federation_expose_components.d9eb0d11.chunk.js"
+          ],
+          "async": [
+            "static/js/4.40b45030.chunk.js"
+          ]
+        },
+        "css": {
+          "sync": [
+            "static/css/__federation_expose_components.0d722650.chunk.css"
+          ],
+          "async": []
+        }
+      }
+    }
+  ]
+}
