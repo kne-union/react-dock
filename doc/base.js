@@ -12,7 +12,10 @@ const BaseExample = () => {
           <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
         </svg>
       ),
-      href: '#'
+      href: '#',
+      onClick: () => {
+        console.log('Home clicked');
+      }
     },
     {
       title: 'Settings',
@@ -23,7 +26,10 @@ const BaseExample = () => {
           <circle cx="12" cy="12" r="3" />
         </svg>
       ),
-      href: '#'
+      href: '#',
+      onClick: () => {
+        console.log('Settings clicked');
+      }
     },
     {
       title: 'Profile',
@@ -34,7 +40,10 @@ const BaseExample = () => {
           <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
         </svg>
       ),
-      href: '#'
+      href: '#',
+      onClick: () => {
+        console.log('Profile clicked');
+      }
     },
     {
       title: 'Search',
@@ -45,7 +54,10 @@ const BaseExample = () => {
           <line x1="21" y1="21" x2="15" y2="15" />
         </svg>
       ),
-      href: '#'
+      href: '#',
+      onClick: () => {
+        console.log('Search clicked');
+      }
     }
   ];
 

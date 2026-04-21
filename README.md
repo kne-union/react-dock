@@ -29,7 +29,10 @@ const BaseExample = () => {
           <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
         </svg>
       ),
-      href: '#'
+      href: '#',
+      onClick: () => {
+        console.log('Home clicked');
+      }
     },
     {
       title: 'Settings',
@@ -40,7 +43,10 @@ const BaseExample = () => {
           <circle cx="12" cy="12" r="3" />
         </svg>
       ),
-      href: '#'
+      href: '#',
+      onClick: () => {
+        console.log('Settings clicked');
+      }
     },
     {
       title: 'Profile',
@@ -51,7 +57,10 @@ const BaseExample = () => {
           <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
         </svg>
       ),
-      href: '#'
+      href: '#',
+      onClick: () => {
+        console.log('Profile clicked');
+      }
     },
     {
       title: 'Search',
@@ -62,7 +71,10 @@ const BaseExample = () => {
           <line x1="21" y1="21" x2="15" y2="15" />
         </svg>
       ),
-      href: '#'
+      href: '#',
+      onClick: () => {
+        console.log('Search clicked');
+      }
     }
   ];
 
@@ -81,7 +93,7 @@ render(<BaseExample />);
 
 | 属性 | 类型 | 默认值 | 说明 |
 |----|----|-----|----|
-| items | `{title: string, icon: ReactNode, href: string}[]` | `[]` | Dock 项目列表，每项包含标题、图标和链接 |
+| items | `{title: string, icon: ReactNode, href: string, onClick?: function}[]` | `[]` | Dock 项目列表，每项包含标题、图标、链接和点击回调 |
 | size | `number` | `18` | 图标尺寸（px），控制图标默认大小 |
 | desktopClassName | `string` | - | 桌面端 Dock 容器的自定义类名 |
 | mobileClassName | `string` | - | 移动端 Dock 容器的自定义类名 |

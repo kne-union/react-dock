@@ -32,7 +32,18 @@ const FloatingDockMobile = ({ items, size, className }) => {
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
-                <a href={item.href} onClick={item.onClick} className={style.dockMobileItem}>
+                <a
+                  href={item.onClick ? undefined : item.href}
+                  onClick={
+                    item.onClick
+                      ? e => {
+                          e.preventDefault();
+                          item.onClick(e);
+                        }
+                      : undefined
+                  }
+                  className={style.dockMobileItem}
+                >
                   <div className={style.dockMobileItemIcon} style={{ height: size, width: size }}>
                     {item.icon}
                   </div>
@@ -91,7 +102,22 @@ function IconContainer({ mouseX, title, icon, href, onClick, size = 18 }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href} onClick={onClick} className={style.iconContainer} ref={ref} style={{ width, height }} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+    <a
+      href={onClick ? undefined : href}
+      onClick={
+        onClick
+          ? e => {
+              e.preventDefault();
+              onClick(e);
+            }
+          : undefined
+      }
+      className={style.iconContainer}
+      ref={ref}
+      style={{ width, height }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
       <AnimatePresence>
         {hovered && (
           <motion.div initial={{ opacity: 0, y: 10, x: '-50%' }} animate={{ opacity: 1, y: 0, x: '-50%' }} exit={{ opacity: 0, y: 2, x: '-50%' }} className={style.tooltip}>
